@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/style.css">
+    <title>Weebs Survey Form</title>
+</head>
+
+<body>
+    <div class="container">
+        <!-- header - title/subtitle -->
+        <header>
+            <h1 id="title" class="text-center">Weebs Survey Form</h1>
+            <p id="description text-center" class="description text-center">
+                A quick survey form of all Otaku's out there
+            </p>
+        </header>
+
+        <!-- survey form -->
+        <form action="" id="survey-form">
+            <!-- name -->
+            <div class="form-group">
+                <label id="name-label" for="name">Name</label>
+                <input type="text" name="name" id="name" placeholder="Enter your Name" required>
+            </div>
+            <!-- email -->
+            <div class="form-group">
+                <label id="email-label" for="email">Email</label>
+                <input type="email" name="email" id="email" placeholder="Enter your Email" required>
+            </div>
+            <!-- age (number) -->
+            <div class="form-group">
+                <label id="number-label" for="number">Age</label>
+                <input type="number" name="age" id="number" min="5" max="99" placeholder="Enter your Age" required>
+            </div>
+            <!-- platform -->
+            <div class="form-group">
+                <p>Which platform you use most to watch Anime?</p>
+                <select id="dropdown" name="platform">
+                    <option disabled selected value>Select the platform</option>
+                    <option value="aniwatch">Aniwatch</option>
+                    <option value="9anime">9anime</option>
+                    <option value="crunchyroll">Crunchyroll</option>
+                    <option value="netflix">Netflix</option>
+                    <option value="other">Other</option>
+                </select>
+            </div>
+            <!-- rating -->
+            <div class="form-group">
+                <p>How would you rate yourself as a Anime Watcher?</p>
+                <label>
+                    <input type="radio" name="rating" value="casual" class="input-radio" checked>
+                    Casual
+                </label>
+                <label>
+                    <input type="radio" name="rating" value="regular" class="input-radio">
+                    Regular
+                </label>
+                <label>
+                    <input type="radio" name="rating" value="hardcore" class="input-radio">
+                    Hardcore
+                </label>
+                <label>
+                    <input type="radio" name="rating" value="diehard" class="input-radio">
+                    Die-Hard
+                </label>
+            </div>
+            <!-- genre -->
+            <div class="form-group">
+                <p>What is your favourite Anime genre?</p>
+                <select id="genre" name="genre" required>
+                    <option disabled selected value>Select the genre</option>
+                    <option value="action">Action</option>
+                    <option value="comdey-sliceoflife">Comedy/Slice-of-Life</option>
+                    <option value="supernatural-magic-scifi">Supernatural/Magic/Sci-Fi</option>
+                    <option value="romance">Romance</option>
+                    <option value="other">Other</option>
+                </select>
+            </div>
+            <!-- animes watched -->
+            <div class="form-group">
+                <p>
+                    What are the popular animes you have watched?
+                    <span class="clue">(Check all that you have watched)</span>
+                </p>
+                <label>
+                    <input name="prefer" value="one-piece" type="checkbox" class="input-checkbox">
+                    One Piece
+                </label>
+                <label>
+                    <input name="prefer" value="naruto" type="checkbox" class="input-checkbox">
+                    Naruto
+                </label>
+                <label>
+                    <input name="prefer" value="dragon-ball" type="checkbox" class="input-checkbox">
+                    Dragon Ball
+                </label>
+                <label>
+                    <input name="prefer" value="demon-slayer" type="checkbox" class="input-checkbox">
+                    Demon Slayer
+                </label>
+                <label>
+                    <input name="prefer" value="death-note" type="checkbox" class="input-checkbox">
+                    Death Note
+                </label>
+                <label>
+                    <input name="prefer" value="pokemon" type="checkbox" class="input-checkbox">
+                    Pokemon
+                </label>
+                <label>
+                    <input name="prefer" value="fullmetal-alchemist" type="checkbox" class="input-checkbox">
+                    Fullmetal Alchemist
+                </label>
+                <label>
+                    <input name="prefer" value="haikyuu" type="checkbox" class="input-checkbox">
+                    Haikyuu!!
+                </label>
+                <label>
+                    <input name="prefer" value="my-hero-acad" type="checkbox" class="input-checkbox">
+                    My Hero Academia
+                </label>
+                <label>
+                    <input name="prefer" value="jojo-bizz-adv" type="checkbox" class="input-checkbox">
+                    Jojo's Bizarre Adventure
+                </label>
+                <label>
+                    <input name="prefer" value="aot" type="checkbox" class="input-checkbox">
+                    Attack on Titan
+                </label>
+                <label>
+                    <input name="prefer" value="hxh" type="checkbox" class="input-checkbox">
+                    Hunter x Hunter
+                </label>
+                <label>
+                    <input name="prefer" value="mob-psycho-100" type="checkbox" class="input-checkbox">
+                    Mob Psycho 100
+                </label>
+                <label>
+                    <input name="prefer" value="black-clover" type="checkbox" class="input-checkbox">
+                    Black Clover
+                </label>
+                <label>
+                    <input name="prefer" value="jjk" type="checkbox" class="input-checkbox">
+                    Jujutsu Kaisen
+                </label>
+                <label>
+                    <input name="prefer" value="bleach" type="checkbox" class="input-checkbox">
+                    Bleach
+                </label>
+                <label>
+                    <input name="prefer" value="kaguya-sama" type="checkbox" class="input-checkbox">
+                    Kaguya-Sama: Love Is War
+                </label>
+                <label>
+                    <input name="prefer" value="one-punch-man" type="checkbox" class="input-checkbox">
+                    One-Punch Man
+                </label>
+                <label>
+                    <input name="prefer" value="spyxfamily" type="checkbox" class="input-checkbox">
+                    Spy × Family
+                </label>
+            </div>
+            <!-- text-area -->
+            <div class="form-group">
+                <p>Any special mentions?</p>
+                <textarea name="mentions" id="mentions" class="input-text-area"
+                    placeholder="Any special anime worth mentioning?"></textarea>
+            </div>
+            <!-- submit -->
+            <div class="form-group">
+                <button type="submit" id="submit" class="submit-button">Submit </button>
+            </div>
+        </form>
+
+    </div>
+</body>
+
+</html>
